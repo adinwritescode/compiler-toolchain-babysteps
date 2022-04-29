@@ -1,4 +1,6 @@
-descent:
-	gcc -g recursive_descent.c -o descent
+parse:
+	gcc -g predictive_parser.c -o parse -lm
+post:
+	gcc -g postfix.c -o post
 clean:
-	rm -f descent
+	rm -f parse, post
